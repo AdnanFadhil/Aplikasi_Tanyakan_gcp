@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../asset/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+    #form{
+        width:50%;
+        max-width:50%;
+    }
+    @media only screen and (max-width: 600px) {
+        #form{
+            max-width:100%;
+            display:block;
+            width:100%;
+        }
+}
+</style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand mx-auto" href="dasboard.html">Tanyakan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container-fluid">
+    
+            <!--Headline-->
+            <div class="row d-flex justify-content-sm-center flex-column my-5">
+                <h2 class="headline mx-auto text-center">Masuk Sekarang Yuk!</h2>
+                <p class="mx-auto text-center ">Temukan semua jawaban pertanyaanmu disini ! </p>
+            </div>
+            <!--Headline-end-->
+
+            <!--form-->
+            <div class="contaner-fluid d-flex justify-content-center align-content-center mb-n5">
+              <div class="col" id="form">
+                <form action="../control/login-control.php" method="POST">
+                    <div class="form-group ">
+                    <label class="pl-3" for="exampleInputEmail1">Email</label>
+                    <input type="email" class="radius form-control " id="exampleInputEmail1" placeholder="Masukkan alamat email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="pl-3" for="exampleInputPassword1">Kata Sandi</label>
+                        <div class="mata ">
+                            <input type="password" class="radius form-control " id="exampleInputPassword1" placeholder="Enter your password" name="password" required>             
+                            <!-- <input id="input_form" type="password" class="form-control p-4" id="exampleInputPassword1" placeholder="Masukkan kata sandi">-->
+                        </div>
+                    </div>
+                    <!--button-->
+                    <div class="row mt-5 d-flex justify-content-center align-content-center flex-column">
+                      <button type="submit" id="button-action" class="btn btn-secondary mx-auto px-4"><h5>Masuk</h5></button>
+                      <h6 class="mx-auto my-2">Belum punya akun? <span><a href="register.html">Daftar Sekarang</a></span></h6>
+                    </div>
+                    <!--button-end-->
+                </form>
+              </div>
+            </div>
+            <!--form-end-->
+
+    </div>
+    
+</body>
+</html>
